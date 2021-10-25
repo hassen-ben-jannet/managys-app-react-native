@@ -1,0 +1,112 @@
+import { StyleSheet } from "react-native";
+export const styles = StyleSheet.create({
+  logoutLabel: {
+    // alignSelf: "flex-end",
+    top: 10,
+  },
+  cardContainer: {
+    marginVertical: 7,
+    marginHorizontal: 10,
+    padding: 10,
+    flex: 5,
+    backgroundColor: "white",
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "lightgrey",
+    flexDirection: "row",
+  },
+  customerInfo: {
+    flex: 4,
+    // borderRightWidth: 1,
+    // borderColor: "lightgrey",
+  },
+  customerInfoName: {
+    fontSize: 16,
+    color: "#f19a20",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  customerInfoText: {
+    fontSize: 12,
+    color: "grey",
+  },
+  customerStat: {
+    padding: 2,
+    textAlign: "center",
+    alignItems: "center",
+    borderWidth: 1,
+    borderColor: "lightgrey",
+    borderRadius: 10,
+    flex: 2,
+    flexDirection: "column",
+  },
+  customerInvoice: {
+    // textAlignVertical: "bottom ",
+    // borderWidth: 2,
+    flex: 1,
+    alignContent: "center",
+    alignSelf: "center",
+  },
+  customerOrder: {
+    flex: 1,
+    alignContent: "center",
+    alignSelf: "center",
+    // borderBottomWidth: 1,
+  },
+  section: {
+    borderTopColor: "lightgrey",
+    borderTopWidth: 1,
+    padding: 10,
+  },
+
+  sectionHeader: {
+    fontSize: 18,
+    color: "#f19a20",
+    fontWeight: "700",
+  },
+
+  sectionContent: {
+    flex: 1,
+    padding: 0,
+    margin: 0,
+  },
+  sectionItem: {
+    fontSize: 12,
+    fontWeight: "700",
+    padding: 0,
+    margin: 0,
+  },
+  sectionIcon: {
+    fontSize: 22,
+    fontWeight: "700",
+    // color: "#f19a20",
+    color: "black",
+    padding: 0,
+    margin: 0,
+  },
+  sectionLabel: {
+    fontSize: 13,
+    fontWeight: "700",
+    padding: 0,
+    margin: 0,
+  },
+  filterButton: {
+    color: "black",
+    borderColor: "grey",
+    borderWidth: 1,
+    borderRadius: 10,
+    textAlign: "center",
+    padding: 5,
+    marginHorizontal: 5,
+  },
+  filterButtonSelected: {
+    color: "white",
+    backgroundColor: "grey",
+    borderColor: "grey",
+    borderWidth: 1,
+    borderRadius: 10,
+    textAlign: "center",
+    padding: 5,
+    marginHorizontal: 5,
+  },
+});
