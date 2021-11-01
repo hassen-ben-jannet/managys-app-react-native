@@ -79,7 +79,7 @@ export function OrderCard({ order, props }) {
         <View style={styles.orderStat}>
           <View style={styles.OrderState}>
             <Text
-              style={[styles.headerInfoState, { backgroundColor: colorState }]}
+              style={[styles.headerInfoState, { color: colorState }]}
             >
               {stateName}
             </Text>
@@ -98,12 +98,12 @@ export function OrderCard({ order, props }) {
 
 const styles = StyleSheet.create({
   cardContainer: {
-    marginVertical: 5,
-    marginHorizontal: 10,
+    marginVertical: 3,
+    // marginHorizontal: 10,
     padding: 10,
     flex: 5,
     backgroundColor: "white",
-    borderRadius: 16,
+    // borderRadius: 16,
     borderWidth: 1,
     borderColor: "lightgrey",
     flexDirection: "row",
@@ -130,19 +130,20 @@ const styles = StyleSheet.create({
   },
 
   orderStat: {
-    padding: 2,
+    // padding: 2,
     textAlign: "center",
     alignItems: "center",
-    borderWidth: 1,
+    // borderWidth: 1,
     borderColor: "lightgrey",
-    borderRadius: 10,
+    // borderRadius: 10,
     flex: 2,
     flexDirection: "column",
+    
   },
   OrderState: {
-    flex: 1,
-    alignContent: "center",
-    alignSelf: "center",
+    flex: 2,
+    alignContent: 'flex-end',
+    alignSelf: "flex-end",
     // borderBottomWidth: 1,
   },
   orderDate: {
@@ -152,15 +153,18 @@ const styles = StyleSheet.create({
   },
   orderTotal: {
     flex: 1,
-    alignContent: "center",
-    alignSelf: "center",
+    alignContent: 'flex-end',
+    alignSelf: "flex-end",
+    bottom:0
+    
   },
   headerInfoState: {
-    fontSize: 14,
+    fontSize: 16,
     borderRadius: 10,
-    paddingHorizontal: 10,
+    // paddingHorizontal: 10,
     // flex:1,
-    margin: 5,
+    // margin: 5,
     color: "white",
+    fontWeight: "bold"
   },
 });

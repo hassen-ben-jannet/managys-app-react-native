@@ -53,10 +53,21 @@ export function DrawerContent(props) {
             icon={() => (
               <Icon name="view-dashboard-outline" style={styles.sectionIcon} />
             )}
-            label="Dashboard"
+            label="Dashboard Achats"
             labelStyle={styles.sectionLabel}
             onPress={() => {
-              props.navigation.navigate("Dashboard");
+              props.navigation.navigate("Dashboard Achats");
+            }}
+          />
+          <DrawerItem
+            style={styles.sectionItem}
+            icon={() => (
+              <Icon name="view-dashboard-outline" style={styles.sectionIcon} />
+            )}
+            label="Dashboard Ventes"
+            labelStyle={styles.sectionLabel}
+            onPress={() => {
+              props.navigation.navigate("Dashboard Ventes");
             }}
           />
         </View>

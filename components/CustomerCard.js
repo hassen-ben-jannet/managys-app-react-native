@@ -40,19 +40,19 @@ export function CustomerCard({ customer, props }) {
               {customer.phone}
             </Text>
           ) : null}
-          {customer.street || customer.city || customer.zip ? (
+          {/* {customer.street || customer.city || customer.zip ? (
             <Text
               style={[styles.customerInfoText, { textTransform: "capitalize" }]}
             >
               <Icon name="pin-outline" color={"#f19a20"} size={14} />{" "}
               {customer.street} {customer.city}, {customer.zip}
             </Text>
-          ) : null}
+          ) : null} */}
         </View>
 
         <View style={styles.customerStat}>
           <View style={styles.customerOrder}>
-            <Text style={{ color: "black", fontSize: 10, textAlign: "center" }}>
+            <Text style={{ color: "black", textAlign: "center" }}>
               Commandes
             </Text>
             <Text style={[styles.customerInfoText, { textAlign: "center" }]}>
@@ -60,7 +60,7 @@ export function CustomerCard({ customer, props }) {
             </Text>
           </View>
           <View style={styles.customerInvoice}>
-            <Text style={{ color: "black", fontSize: 10, textAlign: "center" }}>
+            <Text style={{ color: "black", textAlign: "center" }}>
               Total Factures
             </Text>
 

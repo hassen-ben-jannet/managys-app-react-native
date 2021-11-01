@@ -1,18 +1,18 @@
 import * as React from "react";
 import { StyleSheet, Dimensions, FlatList  } from "react-native";
 
-import { Text, View } from "../components/Themed";
+import { Text, View } from "../../components/Themed";
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 
-import { BASE_URL } from "../config";
+import { BASE_URL } from "../../config";
 
-import { UserContext } from "../contexts/UserContext";
-import {DashboardChartListing} from "../components/DashboardChartListing";
+import { UserContext } from "../../contexts/UserContext";
+import {DashboardChartListing} from "../../components/DashboardChartListing";
 
-import { Loading } from "../components/Loading"
+import { Loading } from "../../components/Loading"
 const initialLayout = { width: Dimensions.get('window').width };
 
-export default function DashboardScreen() {
+export default function DashboardSaleScreen() {
   
   const { token } = React.useContext(UserContext);
   const [index, setIndex] = React.useState(0);

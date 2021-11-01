@@ -23,7 +23,6 @@ import LinkingConfiguration from "./LinkingConfiguration";
 import { LoginScreen } from "../screens/LoginScreen";
 import { useAuth } from "../hooks/useAuth";
 import { AuthContext } from "../contexts/AuthContext";
-import DashboardScreen from "../screens/DashboardScreen";
 import CustomerScreen from "../screens/sale/CustomerScreen";
 import CustomerDetails from "../screens/sale/CustomerDetailsScreen";
 import SupplierDetails from "../screens/purchase/SupplierDetailsScreen";
@@ -43,6 +42,8 @@ import InvoiceDetailsScreen from "../screens/sale/InvoiceDetailsScreen";
 import ProductScreen from "../screens/stock/ProductScreen";
 import ProductDetailsScreen from "../screens/stock/ProductDetailsScreen";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import DashboardPurchaseScreen from "../screens/dashboard/DashboardPurchaseScreen";
+import DashboardSaleScreen  from "../screens/dashboard/DashboardSaleScreen";
 
 export default function Navigation({
   colorScheme,
@@ -84,7 +85,7 @@ function RootNavigator() {
               <Stack.Screen options={{ headerShown: false }} name="MainStack">
                 {() => (
                   <Stack.Navigator
-                    initialRouteName="Dashboard"
+                    initialRouteName="Dashboard Ventes"
                     screenOptions={(props) => ({
                       headerRight: () => <BackButton props={props} />,
                       headerLeft: () => <DrawerButton props={props} />,
@@ -94,8 +95,15 @@ function RootNavigator() {
                       options={(props) => ({
                         headerRight: () => false,
                       })}
-                      name="Dashboard"
-                      component={DashboardScreen}
+                      name="Dashboard Achats"
+                      component={DashboardPurchaseScreen}
+                    />
+                    <Stack.Screen
+                      options={(props) => ({
+                        headerRight: () => false,
+                      })}
+                      name="Dashboard Ventes"
+                      component={DashboardSaleScreen}
                     />
 
                     {/* Clients */}

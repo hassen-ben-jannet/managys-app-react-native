@@ -32,7 +32,7 @@ export function SearchBarFilterOrder({ active_state, partner_name, props }) {
           status="info"
           placeholder="Chercher"
           style={{
-            borderRadius: 25,
+            // borderRadius: 25,
             borderWidth: 1,
             borderColor: "grey",
             backgroundColor: "#fff",
@@ -50,7 +50,7 @@ export function SearchBarFilterOrder({ active_state, partner_name, props }) {
       </View>
       <View
         style={{
-          borderRadius: 10,
+          // borderRadius: 10,
           flexDirection: "row",
           alignSelf: "center",
           marginBottom: 5,
